@@ -440,7 +440,10 @@ void intro()
 
 			cout<<"\n";
 			}
-		sound(100 + 25*t);
+		if(t%2)
+		sound(250+4*t);
+		else
+		sound(250-4*t);
 		delay(70);
 		nosound();
 		clrscr();
